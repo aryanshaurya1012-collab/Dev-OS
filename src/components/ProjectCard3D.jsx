@@ -121,8 +121,8 @@ export default function ProjectCard3D({
       >
         <meshStandardMaterial
           color={isLight ? '#ffffff' : themeConfig?.cardMeshColor || '#221d2d'}
-          metalness={isLight ? 0.1 : 0.7}
-          roughness={isLight ? 0.3 : 0.25}
+          metalness={themeConfig?.cardMetalness ?? (isLight ? 0.1 : 0.7)}
+          roughness={themeConfig?.cardRoughness ?? (isLight ? 0.3 : 0.25)}
         />
       </mesh>
 

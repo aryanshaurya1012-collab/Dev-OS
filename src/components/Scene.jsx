@@ -83,8 +83,8 @@ export default function Scene({
         <planeGeometry args={[70, 50]} />
         <meshStandardMaterial
           color={themeConfig.floorColor}
-          roughness={isLight ? 0.4 : 0.3}
-          metalness={isLight ? 0.1 : 0.6}
+          roughness={themeConfig.roughness ?? (isLight ? 0.4 : 0.3)}
+          metalness={themeConfig.metalness ?? (isLight ? 0.1 : 0.6)}
         />
       </mesh>
 

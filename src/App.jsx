@@ -159,14 +159,14 @@ export default function App() {
 
       {/* Top Editorial HUD Header */}
       <header className="absolute top-0 left-0 right-0 z-20 px-4 sm:px-10 py-3.5 sm:py-4 flex items-center justify-between pointer-events-none">
-        {/* Left: Brand, Mode Switcher & 4 Color Theme Pills */}
+        {/* Left: Brand, Mode Switcher & 5 Color Theme Pills */}
         <div className="flex items-center gap-2.5 sm:gap-4 pointer-events-auto">
           <span
             className={`text-[11px] sm:text-xs tracking-[0.25em] uppercase font-mono transition-colors ${
               isLight ? 'text-zinc-950 font-bold' : 'text-white/80 font-medium'
             }`}
           >
-            DEVFOLIO © 2026
+            Dev-OS © 2026
           </span>
 
           {/* Light / Dark Mode Toggle */}

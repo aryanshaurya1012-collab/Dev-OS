@@ -1261,12 +1261,12 @@ export default function EditorModal({
                     </div>
                   </div>
 
-                  {/* 4 Color Aromas */}
+                  {/* 5 Color Aromas */}
                   <div>
                     <label className={labelCls}>3D Atmosphere &amp; Color Aromas</label>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3">
                       {Object.values(THEMES).map((t) => {
-                        const isSelected = (portfolioData.theme || 'obsidian') === t.id;
+                        const isSelected = (portfolioData.theme || 'wine') === t.id;
                         return (
                           <button
                             key={t.id}
